@@ -95,6 +95,189 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ---------- MENU COMMUN ---------- */
+/* menu horizontal*/
+
+nav
+{
+  width: 100%;
+  position: relative;
+}
+
+/* centrer le menu horizontal */
+nav ul
+{
+   text-align: center;
+}
+
+nav li
+{
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-right: 3%;
+}
+
+/* mise en forme des liens dans le menu */
+nav a
+{
+  text-decoration: none;
+  color: black;
+  text-shadow: 3px 4px 6px #9E99A1;
+}
+
+/* style du texte au passage de la souris */
+nav a:hover
+{
+  color: black;
+  cursor: pointer;
+}
+
+/* ------------- PAGE 1 / ACCUEIL ---------- */
+/* Modification du menu pour la page accueil */
+.accueil
+{
+  width: 100%;
+  position: absolute;
+}
+
+/* Image de fond : femme dos tatouée */
+.ecran img
+{
+  align-content: url(../img/photo_de_fond.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+ /* Le tatoueur enchanté */
+h1
+{
+  margin-left: 4%;
+  font-size: 300%;
+  margin-bottom: 2%;
+  color: #FFD116;
+}
+
+/* Image de transition : plume */
+img.plume
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 11%;
+  width: 7%;
+  margin-top: 1%;
+}
+
+/* Lorem pour test */
+p
+{
+  text-align: center;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+/* --------------- FIN PAGE 1 / ACCUEIL ---------- */
+/* ---------------- PAGE 2 / CATALOGUE ------------*/
+
+/* Mise en page des images de la galerie */
+.galerie
+{
+  margin-top: 1%;
+  width: 100%;
+}
+.galerie img
+{
+  margin-left: 0%;
+  margin-top: 6%;
+}
+
+/* ---------------- FIN PAGE 2 / CATALOGUE ------------*/
+/* --------------- PAGE 3 / BLOG -------------- */
+
+/* Titres des paragraphes du blog */
+h4
+{
+  color: #FFD116;
+  text-align: center;
+}
+
+/* Sous titre*/
+h3
+{
+  margin-left: 4%;
+}
+
+/* Etoiles de notation */
+.stars i
+{
+  color: #FFD116;
+  padding: 3px;
+}
+
+
+
+
+
+/* --------------- FIN PAGE 3 / BLOG -------------- */
+/* --------------- PAGE 4 / CONTACT -------------- */
+
+/* Formulaire de contact */
+.pagecontact
+{
+  margin-top: 12%;
+  position: absolute;
+}
+input, textarea
+{
+  display: block;
+  margin-left: 20%;
+  font-size: 15px;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  text-align: left;
+}
+
+/* Google map */
+iframe
+{
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+}
+
+/* ----------------- FOOTER --------------*/
+
+/*Espace et couleur du footer*/
+footer
+{
+  bottom: 0;
+  margin-top: 3%;
+}
+footer img
+{
+  width: 10%;
+  height: 50%;
+}
+
+footer li
+{
+  display: inline;
+  list-style-type: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+footer ul
+{
+  margin-left: 15%;
+}
+
+footer hr
+{
+  border: 1px solid #FFD116;
+  width: 40%;
+  margin: auto;
+}
 
 
 

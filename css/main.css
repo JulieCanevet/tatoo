@@ -96,6 +96,12 @@ textarea {
    ========================================================================== */
 
 /* ---------- MENU COMMUN ---------- */
+html
+{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* menu horizontal*/
 
 nav
@@ -107,16 +113,16 @@ nav
 /* centrer le menu horizontal */
 nav ul
 {
-   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav li
 {
   display: inline-block;
   list-style-type: none;
-  padding-left: 0%;
-  padding-right: 0%;
-  margin-right: 3%;
+  margin-left: 0;
+  padding: 2%;
 }
 
 /* mise en forme des liens dans le menu */
@@ -125,12 +131,14 @@ nav a
   text-decoration: none;
   color: black;
   text-shadow: 3px 4px 6px #9E99A1;
+  font-family: 'Arvo';
+  font-size: 120%;
 }
 
 /* style du texte au passage de la souris */
 nav a:hover
 {
-  color: black;
+  color: #FFD116;
   cursor: pointer;
 }
 
@@ -141,17 +149,33 @@ nav a:hover
   width: 100%;
   position: absolute;
 }
+.accueil a
+{
+  color: white;
+}
 
 /* Image de fond : femme dos tatouée */
 .ecran img
 {
-  align-content: url(../img/photo_de_fond.png) no-repeat;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
 }
+
+/* Chargement version smartphone uniquement */
+.moyen img
+{
+  display: none;
+}
+.tablette
+{
+  display: none;
+}
+
  /* Le tatoueur enchanté */
 h1
 {
+  font-family: 'Abril Fatface';
   margin-left: 4%;
   font-size: 300%;
   margin-bottom: 2%;
@@ -175,20 +199,50 @@ p
   text-align: center;
   margin-left: 4%;
   margin-right: 4%;
+  font-family: 'Arvo';
+}
+
+hr
+{
+  width: 40%;
+  margin: auto;
+  margin-bottom: 4%;
 }
 /* --------------- FIN PAGE 1 / ACCUEIL ---------- */
 /* ---------------- PAGE 2 / CATALOGUE ------------*/
 
+/* Titre : Soyez libres comme l'art */
+h2
+{
+  font-family: 'Abril Fatface';
+  text-align: left;
+  margin-left: 4%;
+  font-size: 200%;
+  margin-top: 7%;
+}
+
 /* Mise en page des images de la galerie */
 .galerie
 {
-  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* retrécissement des images pour tres petite fenetre navigateur */
+.galerie figure
+{
+  width: 90%;
+  margin-left: 4%;
+}
+
+.galerie figure img
+{
   width: 100%;
 }
-.galerie img
+.desktop
 {
-  margin-left: 0%;
-  margin-top: 6%;
+  display: none;
 }
 
 /* ---------------- FIN PAGE 2 / CATALOGUE ------------*/
@@ -199,6 +253,7 @@ h4
 {
   color: #FFD116;
   text-align: center;
+  font-size: 150%;
 }
 
 /* Sous titre*/
@@ -207,12 +262,6 @@ h3
   margin-left: 4%;
 }
 
-/* Etoiles de notation */
-.stars i
-{
-  color: #FFD116;
-  padding: 3px;
-}
 
 
 
@@ -222,11 +271,7 @@ h3
 /* --------------- PAGE 4 / CONTACT -------------- */
 
 /* Formulaire de contact */
-.pagecontact
-{
-  margin-top: 12%;
-  position: absolute;
-}
+
 input, textarea
 {
   display: block;
@@ -240,8 +285,9 @@ input, textarea
 /* Google map */
 iframe
 {
-  display: block;
-  margin: auto;
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
   margin-top: 4%;
 }
 
@@ -253,25 +299,28 @@ footer
   bottom: 0;
   margin-top: 3%;
 }
+
+/* pictogrammes dans le footer */
 footer img
 {
-  width: 10%;
-  height: 50%;
+  width: 35%;
 }
 
 footer li
 {
   display: inline;
   list-style-type: none;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
 footer ul
 {
+  display: flex;
+  justify-content: center;
   margin-left: 15%;
+  margin-right: 15%;
 }
 
+/* trait de délimitation du footer */
 footer hr
 {
   border: 1px solid #FFD116;
@@ -374,8 +423,97 @@ footer hr
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+
+  /* Image de fond de page d'accueil version portable*/
+body
+{
+  margin: 0;
+}
+      .ecran img
+      {
+        display: none;
+      }
+
+  /* Image de fond de page d'accueil version tablette */
+      .moyen img
+      {
+        display: block;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+
+  /* Version du menu page d'accueil version tablette*/
+    .accueil ul
+    {
+      background: none;
+    }
+    .accueil a
+    {
+      text-shadow: none;
+      font-size: 150%;
+    }
+
+    /* Menu pour page catalogue blog contact version tablette */
+    nav ul
+    {
+      display: flex;
+      background-color: black;
+      margin-top: 0px;
+      padding: 8px;
+      justify-content: space-around;
+
+    }
+
+    nav
+    {
+      position: fixed;
+      top: 0px;
+    }
+
+    nav ul li a
+    {
+      color: white;
+      text-shadow: none;
+    }
+
+  /* Ajout des images dans la galerie mises en formes pour la version tablette*/
+  .tablette
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* images version ordinateur */
+  .desktop
+  {
+    display: none;
+  }
+
+  /* Changement du champ d'écriture pour le message dans contact*/
+  form .ecran
+  {
+    display: none;
+
+  }
+}
+
+@media (min-width: 1024px) {
+
+/* Ajout des images de la galerie version ordinateur*/
+  .desktop
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  form .tablette
+  {
+    display: none;
+  }
 }
 
 @media print,

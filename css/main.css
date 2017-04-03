@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -47,20 +51,17 @@ hr {
     padding: 0;
 }
 
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
@@ -72,6 +73,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +81,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,261 +94,271 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+
 /* ---------- MENU COMMUN ---------- */
-html
-{
-  width: 100%;
-  overflow-x: hidden;
+
+html {
+    width: 100%;
+    overflow-x: hidden;
 }
+
 
 /* menu horizontal*/
 
-nav
-{
-  width: 100%;
-  position: relative;
+nav {
+    width: 100%;
+    position: relative;
 }
+
 
 /* centrer le menu horizontal */
-nav ul
-{
-  display: flex;
-  justify-content: space-around;
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
 }
 
-nav li
-{
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 0;
-  padding: 2%;
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 2%;
 }
+
 
 /* mise en forme des liens dans le menu */
-nav a
-{
-  text-decoration: none;
-  color: black;
-  text-shadow: 3px 4px 6px #9E99A1;
-  font-family: 'Arvo';
-  font-size: 120%;
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 3px 4px 6px #9E99A1;
+    font-family: 'Arvo';
+    font-size: 120%;
 }
+
 
 /* style du texte au passage de la souris */
-nav a:hover
-{
-  color: #FFD116;
-  cursor: pointer;
+
+nav a:hover {
+    color: #FFD116;
+    cursor: pointer;
 }
+
 
 /* ------------- PAGE 1 / ACCUEIL ---------- */
+
+
 /* Modification du menu pour la page accueil */
-.accueil
-{
-  width: 100%;
-  position: absolute;
+
+.accueil {
+    width: 100%;
+    position: absolute;
 }
-.accueil a
-{
-  color: white;
+
+.accueil a {
+    color: white;
 }
+
 
 /* Image de fond : femme dos tatouée */
-.ecran img
-{
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+
+.ecran img {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
+
 
 /* Chargement version smartphone uniquement */
-.moyen img
-{
-  display: none;
-}
-.tablette
-{
-  display: none;
+
+.moyen img {
+    display: none;
 }
 
- /* Le tatoueur enchanté */
-h1
-{
-  font-family: 'Abril Fatface';
-  margin-left: 4%;
-  font-size: 300%;
-  margin-bottom: 2%;
-  color: #FFD116;
+.tablette {
+    display: none;
 }
+
+
+/* Le tatoueur enchanté */
+
+h1 {
+    font-family: 'Abril Fatface';
+    margin-left: 4%;
+    font-size: 300%;
+    margin-bottom: 2%;
+    color: #FFD116;
+}
+
 
 /* Image de transition : plume */
-img.plume
-{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 11%;
-  width: 7%;
-  margin-top: 1%;
+
+img.plume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 11%;
+    width: 7%;
+    margin-top: 1%;
 }
+
 
 /* Lorem pour test */
-p
-{
-  text-align: center;
-  margin-left: 4%;
-  margin-right: 4%;
-  font-family: 'Arvo';
+
+p {
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Arvo';
 }
 
-hr
-{
-  width: 40%;
-  margin: auto;
-  margin-bottom: 4%;
+hr {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 4%;
 }
+
+
 /* --------------- FIN PAGE 1 / ACCUEIL ---------- */
+
+
 /* ---------------- PAGE 2 / CATALOGUE ------------*/
 
+
 /* Titre : Soyez libres comme l'art */
-h2
-{
-  font-family: 'Abril Fatface';
-  text-align: left;
-  margin-left: 4%;
-  font-size: 200%;
-  margin-top: 7%;
+
+h2 {
+    font-family: 'Abril Fatface';
+    text-align: left;
+    margin-left: 4%;
+    font-size: 200%;
+    margin-top: 7%;
 }
+
 
 /* Mise en page des images de la galerie */
-.galerie
-{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 /* retrécissement des images pour tres petite fenetre navigateur */
-.galerie figure
-{
-  width: 90%;
-  margin-left: 4%;
+
+.galerie figure {
+    width: 90%;
+    margin-left: 4%;
 }
 
-.galerie figure img
-{
-  width: 100%;
+.galerie figure img {
+    width: 100%;
 }
-.desktop
-{
-  display: none;
+
+.desktop {
+    display: none;
 }
+
 
 /* ---------------- FIN PAGE 2 / CATALOGUE ------------*/
+
+
 /* --------------- PAGE 3 / BLOG -------------- */
 
+
 /* Titres des paragraphes du blog */
-h4
-{
-  color: #FFD116;
-  text-align: center;
-  font-size: 150%;
+
+h4 {
+    color: #FFD116;
+    text-align: center;
+    font-size: 150%;
 }
+
 
 /* Sous titre*/
-h3
-{
-  margin-left: 4%;
+
+h3 {
+    margin-left: 4%;
 }
-
-
-
-
 
 
 /* --------------- FIN PAGE 3 / BLOG -------------- */
+
+
 /* --------------- PAGE 4 / CONTACT -------------- */
+
 
 /* Formulaire de contact */
 
-input, textarea
-{
-  display: block;
-  margin-left: 20%;
-  font-size: 15px;
-  margin-top: 1%;
-  margin-bottom: 4%;
-  text-align: left;
+input, textarea {
+    display: block;
+    margin-left: 20%;
+    font-size: 15px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    text-align: left;
 }
 
+
 /* Google map */
-iframe
-{
-  width: 90%;
-  height: 90%;
-  margin-left: 5%;
-  margin-top: 4%;
+
+iframe {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 4%;
 }
+
 
 /* ----------------- FOOTER --------------*/
 
+
 /*Espace et couleur du footer*/
-footer
-{
-  bottom: 0;
-  margin-top: 3%;
+
+footer {
+    bottom: 0;
+    margin-top: 3%;
 }
+
 
 /* pictogrammes dans le footer */
-footer img
-{
-  width: 35%;
+
+footer img {
+    width: 35%;
 }
 
-footer li
-{
-  display: inline;
-  list-style-type: none;
+footer li {
+    display: inline;
+    list-style-type: none;
 }
 
-footer ul
-{
-  display: flex;
-  justify-content: center;
-  margin-left: 15%;
-  margin-right: 15%;
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
 
 /* trait de délimitation du footer */
-footer hr
-{
-  border: 1px solid #FFD116;
-  width: 40%;
-  margin: auto;
+
+footer hr {
+    border: 1px solid #FFD116;
+    width: 40%;
+    margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -354,6 +367,7 @@ footer hr
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -371,14 +385,14 @@ footer hr
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -387,6 +401,7 @@ footer hr
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -394,6 +409,7 @@ footer hr
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -407,15 +423,17 @@ footer hr
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -425,103 +443,76 @@ footer hr
 
 @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
-
-  /* Image de fond de page d'accueil version portable*/
-body
-{
-  margin: 0;
-}
-      .ecran img
-      {
+    /* Image de fond de page d'accueil version portable*/
+    body {
+        margin: 0;
+    }
+    .ecran img {
         display: none;
-      }
-
-  /* Image de fond de page d'accueil version tablette */
-      .moyen img
-      {
+    }
+    /* Image de fond de page d'accueil version tablette */
+    .moyen img {
         display: block;
         background-size: cover;
         height: 100vh;
         width: 100%;
-      }
-
-  /* Version du menu page d'accueil version tablette*/
-    .accueil ul
-    {
-      background: none;
     }
-    .accueil a
-    {
-      text-shadow: none;
-      font-size: 150%;
+    /* Version du menu page d'accueil version tablette*/
+    .accueil ul {
+        background: none;
     }
-
+    .accueil a {
+        text-shadow: none;
+        font-size: 150%;
+    }
     /* Menu pour page catalogue blog contact version tablette */
-    nav ul
-    {
-      display: flex;
-      background-color: black;
-      margin-top: 0px;
-      padding: 8px;
-      justify-content: space-around;
-
+    nav ul {
+        display: flex;
+        background-color: black;
+        margin-top: 0px;
+        padding: 8px;
+        justify-content: space-around;
     }
-
-    nav
-    {
-      position: fixed;
-      top: 0px;
+    nav {
+        position: fixed;
+        top: 0px;
     }
-
-    nav ul li a
-    {
-      color: white;
-      text-shadow: none;
+    nav ul li a {
+        color: white;
+        text-shadow: none;
     }
-
-  /* Ajout des images dans la galerie mises en formes pour la version tablette*/
-  .tablette
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  /* images version ordinateur */
-  .desktop
-  {
-    display: none;
-  }
-
-  /* Changement du champ d'écriture pour le message dans contact*/
-  form .ecran
-  {
-    display: none;
-
-  }
+    /* Ajout des images dans la galerie mises en formes pour la version tablette*/
+    .tablette {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    /* images version ordinateur */
+    .desktop {
+        display: none;
+    }
+    /* Changement du champ d'écriture pour le message dans contact*/
+    form .ecran {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
-
-/* Ajout des images de la galerie version ordinateur*/
-  .desktop
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  form .tablette
-  {
-    display: none;
-  }
+    /* Ajout des images de la galerie version ordinateur*/
+    .desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    form .tablette {
+        display: none;
+    }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -530,74 +521,52 @@ body
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
